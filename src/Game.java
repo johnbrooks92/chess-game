@@ -69,8 +69,7 @@ public class Game {
         }
 
         // castling?
-        if (sourcePiece != null && sourcePiece instanceof King
-                && sourcePiece.isCastlingMove()) {
+        if (sourcePiece instanceof King && sourcePiece.isCastlingMove()) {
             move.setCastlingMove(true);
         }
 
